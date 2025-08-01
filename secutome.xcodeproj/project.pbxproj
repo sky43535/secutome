@@ -20,10 +20,11 @@
 		EB68C06F2E396B8800B1BF85 /* chatbot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB68C06E2E396B8800B1BF85 /* chatbot.swift */; };
 		EB68C0712E399F7800B1BF85 /* web.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB68C0702E399F7800B1BF85 /* web.swift */; };
 		EB68C0732E39B26C00B1BF85 /* image to ai .swift in Sources */ = {isa = PBXBuildFile; fileRef = EB68C0722E39B26C00B1BF85 /* image to ai .swift */; };
+		EB68C08F2E3C9B3A00B1BF85 /* extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB68C08E2E3C9B3A00B1BF85 /* extras.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EB68C04F2E38AD9D00B1BF85 /* SkyCipher dirary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SkyCipher dirary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB68C04F2E38AD9D00B1BF85 /* secutome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = secutome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB68C0522E38AD9D00B1BF85 /* SkyCipher_diraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyCipher_diraryApp.swift; sourceTree = "<group>"; };
 		EB68C0542E38AD9D00B1BF85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EB68C0562E38ADA000B1BF85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +38,7 @@
 		EB68C06E2E396B8800B1BF85 /* chatbot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatbot.swift; sourceTree = "<group>"; };
 		EB68C0702E399F7800B1BF85 /* web.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = web.swift; sourceTree = "<group>"; };
 		EB68C0722E39B26C00B1BF85 /* image to ai .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "image to ai .swift"; sourceTree = "<group>"; };
+		EB68C08E2E3C9B3A00B1BF85 /* extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extras.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,7 @@
 		EB68C0502E38AD9D00B1BF85 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB68C04F2E38AD9D00B1BF85 /* SkyCipher dirary.app */,
+				EB68C04F2E38AD9D00B1BF85 /* secutome.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +74,7 @@
 				EB68C0522E38AD9D00B1BF85 /* SkyCipher_diraryApp.swift */,
 				EB68C0542E38AD9D00B1BF85 /* ContentView.swift */,
 				EB68C0682E39585600B1BF85 /* keychain.swift */,
+				EB68C08E2E3C9B3A00B1BF85 /* extras.swift */,
 				EB68C0662E38AED900B1BF85 /* good.swift */,
 				EB68C06C2E39649300B1BF85 /* topic grouper 2.mlmodel */,
 				EB68C06E2E396B8800B1BF85 /* chatbot.swift */,
@@ -97,9 +100,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EB68C04E2E38AD9D00B1BF85 /* SkyCipher dirary */ = {
+		EB68C04E2E38AD9D00B1BF85 /* secutome */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB68C05D2E38ADA000B1BF85 /* Build configuration list for PBXNativeTarget "SkyCipher dirary" */;
+			buildConfigurationList = EB68C05D2E38ADA000B1BF85 /* Build configuration list for PBXNativeTarget "secutome" */;
 			buildPhases = (
 				EB68C04B2E38AD9D00B1BF85 /* Sources */,
 				EB68C04C2E38AD9D00B1BF85 /* Frameworks */,
@@ -109,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = "SkyCipher dirary";
+			name = secutome;
 			productName = "SkyCipher dirary";
-			productReference = EB68C04F2E38AD9D00B1BF85 /* SkyCipher dirary.app */;
+			productReference = EB68C04F2E38AD9D00B1BF85 /* secutome.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -129,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EB68C04A2E38AD9D00B1BF85 /* Build configuration list for PBXProject "SkyCipher dirary" */;
+			buildConfigurationList = EB68C04A2E38AD9D00B1BF85 /* Build configuration list for PBXProject "secutome" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -142,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EB68C04E2E38AD9D00B1BF85 /* SkyCipher dirary */,
+				EB68C04E2E38AD9D00B1BF85 /* secutome */,
 			);
 		};
 /* End PBXProject section */
@@ -166,6 +169,7 @@
 			files = (
 				EB68C0692E39585600B1BF85 /* keychain.swift in Sources */,
 				EB68C0732E39B26C00B1BF85 /* image to ai .swift in Sources */,
+				EB68C08F2E3C9B3A00B1BF85 /* extras.swift in Sources */,
 				EB68C0652E38AE7E00B1BF85 /* diary.swift in Sources */,
 				EB68C0552E38AD9D00B1BF85 /* ContentView.swift in Sources */,
 				EB68C0672E38AED900B1BF85 /* good.swift in Sources */,
@@ -371,7 +375,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EB68C04A2E38AD9D00B1BF85 /* Build configuration list for PBXProject "SkyCipher dirary" */ = {
+		EB68C04A2E38AD9D00B1BF85 /* Build configuration list for PBXProject "secutome" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB68C05B2E38ADA000B1BF85 /* Debug */,
@@ -380,7 +384,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB68C05D2E38ADA000B1BF85 /* Build configuration list for PBXNativeTarget "SkyCipher dirary" */ = {
+		EB68C05D2E38ADA000B1BF85 /* Build configuration list for PBXNativeTarget "secutome" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB68C05E2E38ADA000B1BF85 /* Debug */,
