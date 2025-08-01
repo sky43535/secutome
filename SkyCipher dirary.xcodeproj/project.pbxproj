@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EB68C04F2E38AD9D00B1BF85 /* secutome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = secutome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB68C04F2E38AD9D00B1BF85 /* SkyCipher dirary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SkyCipher dirary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB68C0522E38AD9D00B1BF85 /* SkyCipher_diraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyCipher_diraryApp.swift; sourceTree = "<group>"; };
 		EB68C0542E38AD9D00B1BF85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EB68C0562E38ADA000B1BF85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 		EB68C0502E38AD9D00B1BF85 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB68C04F2E38AD9D00B1BF85 /* secutome.app */,
+				EB68C04F2E38AD9D00B1BF85 /* SkyCipher dirary.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,9 +100,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EB68C04E2E38AD9D00B1BF85 /* secutome */ = {
+		EB68C04E2E38AD9D00B1BF85 /* SkyCipher dirary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB68C05D2E38ADA000B1BF85 /* Build configuration list for PBXNativeTarget "secutome" */;
+			buildConfigurationList = EB68C05D2E38ADA000B1BF85 /* Build configuration list for PBXNativeTarget "SkyCipher dirary" */;
 			buildPhases = (
 				EB68C04B2E38AD9D00B1BF85 /* Sources */,
 				EB68C04C2E38AD9D00B1BF85 /* Frameworks */,
@@ -112,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = secutome;
+			name = "SkyCipher dirary";
 			productName = "SkyCipher dirary";
-			productReference = EB68C04F2E38AD9D00B1BF85 /* secutome.app */;
+			productReference = EB68C04F2E38AD9D00B1BF85 /* SkyCipher dirary.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EB68C04A2E38AD9D00B1BF85 /* Build configuration list for PBXProject "secutome" */;
+			buildConfigurationList = EB68C04A2E38AD9D00B1BF85 /* Build configuration list for PBXProject "SkyCipher dirary" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -145,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EB68C04E2E38AD9D00B1BF85 /* secutome */,
+				EB68C04E2E38AD9D00B1BF85 /* SkyCipher dirary */,
 			);
 		};
 /* End PBXProject section */
@@ -375,7 +375,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EB68C04A2E38AD9D00B1BF85 /* Build configuration list for PBXProject "secutome" */ = {
+		EB68C04A2E38AD9D00B1BF85 /* Build configuration list for PBXProject "SkyCipher dirary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB68C05B2E38ADA000B1BF85 /* Debug */,
@@ -384,7 +384,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB68C05D2E38ADA000B1BF85 /* Build configuration list for PBXNativeTarget "secutome" */ = {
+		EB68C05D2E38ADA000B1BF85 /* Build configuration list for PBXNativeTarget "SkyCipher dirary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB68C05E2E38ADA000B1BF85 /* Debug */,
