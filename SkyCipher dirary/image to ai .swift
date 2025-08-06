@@ -17,7 +17,8 @@ struct SecureStorageItem: Identifiable, Codable, Hashable {
         case secureText = "Secure Text Snippet"
         case loginCredentials = "Login Credentials"
         case idDocument = "ID Document Info"
-
+        case bankAccount = "Bank Account"
+        case wifiCredentials = "Wi-Fi Credentials"
         var id: String { rawValue }
 
         var iconName: String {
@@ -27,6 +28,8 @@ struct SecureStorageItem: Identifiable, Codable, Hashable {
             case .secureText: return "text.quote"
             case .loginCredentials: return "person.crop.rectangle"
             case .idDocument: return "doc.text.fill"
+            case .bankAccount: return "banknote.fill"
+            case .wifiCredentials: return "wifi"
             }
         }
 
@@ -37,6 +40,9 @@ struct SecureStorageItem: Identifiable, Codable, Hashable {
             case .secureText: return .purple
             case .loginCredentials: return .green
             case .idDocument: return .pink
+            case .bankAccount: return .red
+            case .wifiCredentials: return .indigo
+             
             }
         }
     }
@@ -147,6 +153,14 @@ struct SecureStorageTab: View {
                     }
                 case .idDocument:
                     AddIdDocumentView { newItem in
+                        addItem(newItem)
+                    }
+                case .bankAccount:
+                    AddBankAccountView { newItem in
+                        addItem(newItem)
+                    }
+                case .wifiCredentials:
+                    AddWifiCredentialsView { newItem in
                         addItem(newItem)
                     }
                 }
@@ -520,5 +534,106 @@ struct AddIdDocumentView: View {
             result.append(char)
         }
         return result
+    }
+}
+struct AddBankAccountView: View {
+    var onSave: (SecureStorageItem) -> Void
+    @Environment(\.dismiss) private var dismiss
+
+    @State private var label = ""
+    @State private var accountNumber = ""
+    @State private var routingNumber = ""
+    @State private var bankName = ""
+    @State private var notes = ""
+
+    var body: some View {
+        NavigationView {
+            Form {
+                Section("Label") {
+                    TextField("bank account name...", text: $label)
+                }
+                Section("Account Number") {
+                    TextField("123456789", text: $accountNumber)
+                        .keyboardType(.numberPad)
+                }
+                Section("Routing Number") {
+                    TextField("987654321", text: $routingNumber)
+                        .keyboardType(.numberPad)
+                }
+                Section("Bank Name") {
+                    TextField("Bank of...", text: $bankName)
+                }
+                Section("Notes (optional)") {
+                    TextEditor(text: $notes).frame(height: 100)
+                }
+            }
+            .navigationTitle("Add Bank Account")
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Save") {
+                        let fields = [
+                            "Account Number": accountNumber,
+                            "Routing Number": routingNumber,
+                            "Bank Name": bankName,
+                            "Notes": notes
+                        ]
+                        let item = SecureStorageItem(type: .bankAccount, label: label, fields: fields)
+                        onSave(item)
+                        dismiss()
+                    }
+                    .disabled(label.isEmpty || accountNumber.isEmpty || routingNumber.isEmpty)
+                }
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancel") { dismiss() }
+                }
+            }
+        }
+    }
+}
+struct AddWifiCredentialsView: View {
+    var onSave: (SecureStorageItem) -> Void
+    @Environment(\.dismiss) private var dismiss
+
+    @State private var label = ""
+    @State private var ssid = ""
+    @State private var password = ""
+    @State private var notes = ""
+
+    var body: some View {
+        NavigationView {
+            Form {
+                Section("Label") {
+                    TextField("network label...", text: $label)
+                }
+                Section("SSID") {
+                    TextField("Network Name", text: $ssid)
+                }
+                Section("Password") {
+                    SecureField("Wi-Fi Password", text: $password)
+                }
+                Section("Notes (optional)") {
+                    TextEditor(text: $notes).frame(height: 100)
+                }
+            }
+            .navigationTitle("Add Wi-Fi Credentials")
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Save") {
+                        let fields = [
+                            "SSID": ssid,
+                            "Password": password,
+                            "Notes": notes
+                        ]
+                        let item = SecureStorageItem(type: .wifiCredentials, label: label, fields: fields)
+                        onSave(item)
+                        dismiss()
+                    }
+                    .disabled(label.isEmpty || ssid.isEmpty || password.isEmpty)
+                }
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancel") { dismiss() }
+                }
+            }
+        }
     }
 }

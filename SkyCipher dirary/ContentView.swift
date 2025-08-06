@@ -41,13 +41,16 @@ struct ContentView: View {
                     }
                     .tag(1)
                     
+                    
                     NavigationView {
-                        WebsiteTabView()
+                        ConfessionShredderView()
                     }
                     .tabItem {
-                        Label("safe haven", systemImage: "globe")
+                        Label("confession shredder", systemImage: "scissors")
                     }
                     .tag(2)
+                   
+                    
                     
                     NavigationView {
                         SecureStorageTab()
@@ -56,6 +59,7 @@ struct ContentView: View {
                         Label("vault ", systemImage: "lock.shield")
                     }
                     .tag(3)
+                    
                     NavigationView {
                         ExtrasView ()
                     }
@@ -106,10 +110,10 @@ struct OnboardingView: View {
         LinearGradient(colors: [.purple, .blue], startPoint: .topLeading, endPoint: .bottomTrailing),
         LinearGradient(colors: [.orange, .pink], startPoint: .topLeading, endPoint: .bottomTrailing),
         LinearGradient(colors: [.mint, .teal], startPoint: .topLeading, endPoint: .bottomTrailing),
-        LinearGradient(colors: [.blue, .pink], startPoint: .topLeading, endPoint: .bottomTrailing),
         LinearGradient(colors: [.gray, .black], startPoint: .topLeading, endPoint: .bottomTrailing), // Vault
         LinearGradient(colors: [.purple, .indigo], startPoint: .topLeading, endPoint: .bottomTrailing), // Support
-        LinearGradient(colors: [.red, .green], startPoint: .topLeading, endPoint: .bottomTrailing) // Apple
+        LinearGradient(colors: [.red, .green], startPoint: .topLeading, endPoint: .bottomTrailing), // Apple
+        LinearGradient(colors: [.accentColor, .orange], startPoint: .topLeading, endPoint: .bottomTrailing)
     ]
 
     var body: some View {
@@ -199,10 +203,10 @@ struct OnboardingView: View {
             "Your Secure Diary",
             "Multi-Layered Protection",
             "Private access,state of the art security",
-            "Safe Haven Web Portal",
             "Your Secure Vault",
             "Need Help? We’re Here",
-            "Thank You, Apple ❤️"
+            "Thank You, Apple ❤️",
+            "the confession, shredder"
         ][index]
     }
 
@@ -212,10 +216,10 @@ struct OnboardingView: View {
             "Keep your thoughts safe with state-of-the-art encryption and biometric security. Simple, elegant, and personal.",
             "Unlock with Face ID, a custom symbol PIN, and more. with SkyCipher™ security and apple",
             "Your notes are saved on device with state-of-the-art encryption. Powered by SkysMind™ — privacy, reimagined. (Note: if security setup is skipped, no data will be encrypted. Contact support for details.)",
-            "Access to Safe Haven, a teen support website made by SkysMind™.",
             "Store your most sensitive info like crypto keys, access pins, and passwords — all encrypted and guarded.",
             "Questions? Feedback? Or need help setting up? Reach out anytime at skylerp530@gmail.com — we care.",
-            "Built on a foundation of privacy, creativity, and care — made possible by a platform that empowers anyone to build for everyone. This app is a small thank-you to the ecosystem of apple that inspires safer, smarter, and more meaningful digital spaces."
+            "Built on a foundation of privacy, creativity, and care — made possible by a platform that empowers anyone to build for everyone. This app is a small thank-you to the ecosystem of apple that inspires safer, smarter, and more meaningful digital spaces.",
+            "A private, secure space to write down your thoughts and feelings — then destroy them instantly. Type your confession, tap Shred, and watch your words visually break apart and disappear with a smooth animation. Once shredded, the text is permanently erased, and a gentle confirmation toast lets you know your secret is safe. Perfect for those moments when you just need to let go without saving a trace."
         ][index]
     }
 
@@ -225,10 +229,10 @@ struct OnboardingView: View {
             "lock.shield",
             "person.crop.circle.badge.checkmark",
             "calendar",
-            "globe",
             "lock.vault",
             "questionmark.bubble",
-            "apple.logo"
+            "apple.logo",
+            "scissors"
         ][index]
     }
 }

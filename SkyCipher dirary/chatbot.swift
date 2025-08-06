@@ -18,7 +18,7 @@ struct AIAssistantView: View {
     let synthesizer = AVSpeechSynthesizer()
     
     // ⬅️ INSERT YOUR KEY + MODEL HERE
-    let apiKey = "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"
+    let apiKey = "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"
     let model = "meta-llama/llama-3.1-405b-instruct:free" // Or any OpenRouter-supported model
     private let systemPrompt = """
     You are a highly intelligent, insightful, and knowledgeable AI assistant designed to provide in-depth, thoughtful, and nuanced answers on a wide range of topics, especially tailored to chat with teens with empathy and clarity. Your goal is to be as helpful, honest, and precise as possible, including providing detailed explanations and exploring complex ideas.
