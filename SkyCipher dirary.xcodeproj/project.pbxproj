@@ -39,6 +39,7 @@
 		EB68C0722E39B26C00B1BF85 /* image to ai .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "image to ai .swift"; sourceTree = "<group>"; };
 		EB68C08E2E3C9B3A00B1BF85 /* extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extras.swift; sourceTree = "<group>"; };
 		EB6C961E2E432D240006B6EE /* shred.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shred.swift; sourceTree = "<group>"; };
+		EB6C96202E433A550006B6EE /* SkyCipher-dirary-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SkyCipher-dirary-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +72,7 @@
 		EB68C0512E38AD9D00B1BF85 /* SkyCipher dirary */ = {
 			isa = PBXGroup;
 			children = (
+				EB6C96202E433A550006B6EE /* SkyCipher-dirary-Info.plist */,
 				EB68C0522E38AD9D00B1BF85 /* SkyCipher_diraryApp.swift */,
 				EB68C0542E38AD9D00B1BF85 /* ContentView.swift */,
 				EB68C0682E39585600B1BF85 /* keychain.swift */,
@@ -316,13 +318,13 @@
 				DEVELOPMENT_TEAM = 2QPR65543M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SkyCipher-dirary-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Unlock your diary securely using Face ID or Touch ID.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -353,13 +355,13 @@
 				DEVELOPMENT_TEAM = 2QPR65543M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SkyCipher-dirary-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Unlock your diary securely using Face ID or Touch ID.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
